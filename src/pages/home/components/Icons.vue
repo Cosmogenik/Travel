@@ -17,49 +17,15 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    iconList: Array
+  },
   data () {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
         autoplay: false
-      },
-      iconList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
-        desc: '自然风光'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
-        desc: '一日游'
-      }, {
-        id: '0004',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/48/cb72b99b71974c02.png',
-        desc: '生活休闲'
-      }, {
-        id: '0005',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
-      }, {
-        id: '0006',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
-        desc: '自然风光'
-      }, {
-        id: '0007',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
-        desc: '一日游'
-      }, {
-        id: '0008',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/48/cb72b99b71974c02.png',
-        desc: '生活休闲'
-      }, {
-        id: '0009',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/48/cb72b99b71974c02.png',
-        desc: '生活休闲'
-      }]
+      }
     }
   },
   computed: {
@@ -90,7 +56,7 @@ export default {
   .icons
     .swiper-pagination
       position relative
-      bottom -3.5rem  
+      bottom -3.5rem
     .icon
       position relative
       overflow hidden
@@ -106,6 +72,7 @@ export default {
         bottom .55rem
         box-sizing border-box
         padding .1rem
+        padding-top .2rem
         .icon-img-content
           display block
           margin 0 auto
