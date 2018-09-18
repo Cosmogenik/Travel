@@ -48,5 +48,4 @@ export default {
       line-height .34rem
       height .34rem
       color #ccc
-
 </style>
