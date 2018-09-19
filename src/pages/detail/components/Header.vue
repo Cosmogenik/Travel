@@ -54,11 +54,12 @@ export default {
     line-height .8rem
     border-radius .4rem
     text-align center
-    background rgba(0, 0, 0, .8)
+    background rgba(0, 0, 0, .5)
     .header-abs-back
       font-size .4rem
       color #fff
   .header-fixed
+    z-index 2
     position fixed
     top 0
     left 0
