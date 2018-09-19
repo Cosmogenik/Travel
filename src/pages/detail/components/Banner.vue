@@ -58,6 +58,7 @@ export default {
         font-size .32rem
       .banner-number
         margin-top .14rem
+        margin-right .2rem
         padding 0 .4rem
         height .32rem
         line-height .32rem
