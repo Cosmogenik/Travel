@@ -32,8 +32,13 @@ export default {
       return !this.list.length
     }
   },
+  activated () {
+    this.keyword = ''
+  },
   mounted () {
-    this.scroll = new Bscroll(this.$refs.search)
+    this.scroll = new Bscroll(this.$refs.search, {
+      click: true
+    })
   },
   methods: {
     handleCityClick (city) {

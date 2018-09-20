@@ -26,11 +26,19 @@ export default {
       sightName: '',
       bannerImg: '',
       gallaryImgs: [],
-      categoryList: []
+      categoryList: [],
+      itemId: ''
     }
   },
   mounted () {
+    this.itemId = this.$route.params.id
     this.getDetailInfo()
+  },
+  activated () {
+    if (this.itemId !== this.$route.params.id) {
+      this.itemId = this.$route.params.id
+      this.getDetailInfo()
+    }
   },
   methods: {
     getDetailInfo () {
