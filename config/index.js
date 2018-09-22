@@ -12,7 +12,10 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://localhost:80'
+        target: 'http://localhost:80',
+        pathRewrite: {
+          '^/api': '/qunar/api'
+        }
       }
     },
 

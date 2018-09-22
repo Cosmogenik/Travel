@@ -54,6 +54,7 @@ export default {
     height 0
     padding-bottom  50%
   .icons
+    margin-top: .1rem
     .swiper-pagination
       position relative
       bottom -3.5rem
@@ -69,10 +70,9 @@ export default {
         top 0
         left 0
         right 0
-        bottom .55rem
+        bottom .45rem
         box-sizing border-box
         padding .1rem
-        padding-top .2rem
         .icon-img-content
           display block
           margin 0 auto
